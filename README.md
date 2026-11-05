@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# CivicSense
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+CivicSense is an AI-powered civic intelligence platform for reporting, tracking, and resolving local issues. Residents can report potholes, blocked drains, flooding, waste, damaged streetlights, and other public safety concerns, then follow updates as they move toward resolution.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Quick issue reporting:** Submit a report with a photo, a voice note in Tamil or English, or a manual form.
+- **AI-assisted verification:** Help verify evidence and identify reports that describe the same issue.
+- **Issue tracking:** Follow report status and view the timeline from submission through resolution.
+- **Nearby issue feed:** Browse reports in your ward and filter them by category.
+- **Interactive map:** View reported issues by location.
+- **Community support:** Upvote reports and see how many people have reported an issue at the same location.
+- **Personal dashboard:** Review your reports and track profile points and ward ranking.
+- **Alerts and emergency access:** See local risk notices and access the SOS page.
+- **Role-based access:** Separate access for residents, inspectors, and administrators.
 
-## React Compiler
+## User Roles
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Residents:** Report civic issues, support existing reports, and track progress.
+- **Inspectors:** Review and inspect reported issues, then update their progress.
+- **Administrators:** Manage reports and users and oversee the resolution process.
 
-## Expanding the Oxlint configuration
+## Built With
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- React
+- TypeScript
+- Vite
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+## Getting Started
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Prerequisites
+
+Install [Node.js](https://nodejs.org/) and npm.
+
+### Run locally
+
+```bash
+npm install
+npm run dev
